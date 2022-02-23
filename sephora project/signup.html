@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+</head>
+<style>
+    #signupcontainer{
+        width: 30%;
+        height: 720px;
+        margin: auto;
+        margin-top: 12px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    #signhead{
+        width: 50%;
+        height: 100px;
+        margin: auto;
+        margin-top: 60px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    #signdetails{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5,auto);
+        gap: 20px;
+    }
+    #signdetails>div{
+        padding-bottom: 10px;
+    
+    }
+    #signinput{
+        width: 80%;
+        height: 40px;
+        margin-left: 30px;
+        margin-top: -3px;
+        border: 2px solid black;
+    }
+    #signupbtn{
+        width: 82%;
+        height: 40px;
+        padding-left: 20px;
+        margin-left: 30px;
+        background-color: #ff3399;
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        font-family: sans-serif;
+        border: 1px solid #ff3399;
+        margin-top: 20px;
+    }
+    #signp{
+        font-size: 14px;
+        color: #999999;
+        margin-left: 30px;
+    }
+
+</style>
+<body>
+    <div id="signupcontainer">
+        <div id="signhead">
+            <h1>CREATE ACCOUNT</h1>
+        </div>
+        <div id="signdetails">
+            <div>
+            <p id="signp">Name*</p>
+            <input id="signinput" type="text" placeholder="">
+            </div>
+            <div>
+                <p id="signp">Email*</p>
+                <input id="signinput" type="email">
+            </div>
+            <div>
+                <p id="signp">Password*</p>
+                <input id="signinput" type="password">
+                <i class="far fa-eye" id="togglePassword" style="margin-left: -30px; cursor: pointer;"></i>
+            </div>
+            <div>
+                <p id="signp">Phone Number*</p>
+                <input id="signinput" type="text">
+            </div>
+            <div>
+                <button id="signupbtn">CONTINUE</button>
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+</html>
