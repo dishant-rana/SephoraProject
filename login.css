@@ -1,4 +1,4 @@
-#logincontainer {
+#logincontainerFoot {
     height: 10x;
     display: flex;
     justify-content: center;
@@ -6,7 +6,7 @@
     margin-top: 50px;
   }
   
-  #form {
+  #formlogin {
     width: 20%;
     display: flex;
     flex-direction: column;
@@ -17,14 +17,14 @@
     box-shadow: 4px 4px 20px 5px rgba(0, 0, 0, 0.25);
   }
   
-  #form input {
+  #formlogin input {
     width: 95%;
     margin: 1rem;
     font-size: 1.2rem;
     padding: 0.5rem;
     border: 2px solid #ec008c
   }
-  #form input[type="submit"] {
+  #formlogin input[type="submit"] {
     color: white;
     background: #ec008c;
     border: none;
@@ -32,11 +32,11 @@
     font-size: 1.5rem;
     margin-top: 1rem;
   }
-  #form input[type="submit"]:hover{
+  #formlogin input[type="submit"]:hover{
       cursor: pointer;
   }
   
-  #form-heading {
+  #formlogin-heading {
     
     margin: 0.5rem;
   }

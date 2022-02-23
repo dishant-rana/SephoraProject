@@ -1,5 +1,5 @@
 var regdUsers=JSON.parse(localStorage.getItem("loginDetalis")) || [];
-document.getElementById("form").addEventListener("submit",function(event){
+document.getElementById("formlogin").addEventListener("submit",function(event){
     event.preventDefault();
     var form=document.querySelector("#form");
     var email=form.email.value;

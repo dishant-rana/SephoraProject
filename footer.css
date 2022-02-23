@@ -34,29 +34,29 @@
 #subscribe button:hover{
     cursor: pointer;
 }
-#content{
+#contentFoot{
     width: 90%;
     margin: auto;
     margin-top: 30px;
     color: #656565
 }
-#content h3{
+#contentFoot h3{
     letter-spacing: 2px;
     text-align: center;
     margin-bottom: -10px;
 }
-#content p{
+#contentFoot p{
     text-align: center;
     line-height: 25px;
     margin-bottom: 30px;
 }
-#content>h3:first-child{
+#contentFoot>h3:first-child{
     margin-bottom: 20px;
 }
 #links{
     margin: auto;
     display: flex;
-    justify-content: space-around;
+    justify-content:space-around;
     width: 50%;
 
 }

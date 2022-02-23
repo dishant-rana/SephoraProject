@@ -1,4 +1,4 @@
-#container{
+#containerFoot{
     background-color:#f3f3f3;
     width: 100%;
     height: max-content;
@@ -11,7 +11,7 @@
     margin-right: -5px;
 
 }
-#container>img{
+#containerFoot>img{
     width: 110.64px;
     height: 45px;
     margin-left: 10px;
@@ -113,7 +113,7 @@
     color: #ec008c;
     margin-right: 10px;
 }
-#container2{
+#containerFoot2{
     height: 100px;
     width: 100%;
     display: flex;
@@ -135,14 +135,14 @@
     background: white;
 
   }
-  #container2>div:first-child{
+  #containerFoot2>div:first-child{
       border-bottom: 1px solid black;
       width: max-content;
   }
   input:focus{
       outline:none;
   }
-  #container2 h1{
+  #containerFoot2 h1{
       letter-spacing: 5px;
       font-family: 'Montserrat', sans-serif;
         font-family: 'Open Sans', sans-serif;
@@ -152,7 +152,7 @@
         font-family: 'Ubuntu', sans-serif;
         font-size: 50px;
 }
-#container2>div:last-child{
+#containerFoot2>div:last-child{
     display: flex;
 }
 .fa-heart{
@@ -170,20 +170,20 @@
     margin-left: 10px;
     margin-right: 10px;
 }
-#container3{
+#containerFoot3{
     width: 80%;
     height: max-content;
     margin: auto;
     justify-content: space-between;
     display: flex;
 }
-#container3 a{
+#containerFoot3 a{
     text-decoration: none;
     font-size: 18px;
     color: #000;
     font-weight: bold;
 }
-#container3 a:hover{
+#containerFoot3 a:hover{
     color: #ec008c;
 }
 #login{
