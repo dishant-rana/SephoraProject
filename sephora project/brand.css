@@ -1,0 +1,102 @@
+#head{
+    margin: 15px auto;
+    font-size: 52px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    text-align: center;
+    letter-spacing: 3px;;
+    padding-bottom: 20px;
+        }
+        form {
+background-color: black;
+width: 650px;
+height: 60px;
+display: flex;
+flex-direction: row;
+align-items: center;
+}  
+input {
+all: unset;
+font: 16px system-ui;
+color: #fff;
+height: 100%;
+width: 100%;
+padding: 6px 10px;
+}
+::placeholder {
+color: #fff;
+opacity: 0.7; 
+}
+button {
+all: unset;
+cursor: pointer;
+width: 44px;
+height: 44px;
+}
+
+svg {
+color: purple;
+fill: currentColor;
+width: 30px;
+height: 30px;
+padding: 10px;
+}
+#search{
+    padding-left:360px ;
+    padding-bottom: 20px;
+}
+#container1{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(100px,auto);
+    padding-left: 40px;
+
+}
+#container2{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(100px,auto);
+    padding-left: 150px;
+
+}
+#container3{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(100px,auto);
+    padding-left:150px;
+}
+#container1>div{
+    margin-bottom: -30px;
+}
+#container2>div{
+    margin-bottom: -200px;
+}
+#container3>div{
+    margin-bottom: -100px;
+}
+h2 {
+    display: block;
+    font-size: 46px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    margin-bottom: -20px;
+    margin-left: 55px;
+}
+a{
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 1px;
+    padding-bottom: 12px;
+    color: black;
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+    margin: 30px 10px 0 15px;
+}
+#big{
+    display: flex;
+}
+hr{
+    width: 85%;
+}
