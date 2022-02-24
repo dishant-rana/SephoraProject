@@ -193,6 +193,7 @@ var makeupData = [[
     offer:"4 more offer",
     btn:"Add to Cart"
 }]]];
+var cartArr = JSON.parse(localStorage.getItem("cartData")) || [];
 let a = 0;
 makeupData[0].map(function(data){
     var top = document.createElement("div");
@@ -233,6 +234,11 @@ makeupData[0].map(function(data){
     var btn = document.createElement("button");
     btn.setAttribute("class","mbutton")
     btn.innerText = elem.btn;
+
+    btn.addEventListener("click",function(event){
+        cartArr.push(elem);
+        localStorage.setItem("cartData",JSON.stringify(cartArr));
+    })
 
     div.append(image,mode,brand,name,color,price,offer,btn);
     bottom.append(div);
