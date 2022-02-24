@@ -165,6 +165,13 @@ input:focus {
   margin-left: 10px;
   margin-right: 10px;
 }
+.light {
+  font-weight: lighter;
+  font-size: 18px;
+  color: black;
+  font-family: "Times New Roman", Times, serif;
+}
+
 #containerFoot3 {
   width: 80%;
   height: max-content;
@@ -174,7 +181,7 @@ input:focus {
 }
 #containerFoot3 a {
   text-decoration: none;
-  font-size: 18px;
+  font-size: 15px;
   color: #000;
   font-weight: bold;
 }

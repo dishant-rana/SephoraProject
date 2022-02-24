@@ -7,6 +7,7 @@
 }
 #subscribe {
   background-color: whitesmoke;
+  margin-top: 50px;
 }
 #subscribe > div:last-child {
   display: flex;
