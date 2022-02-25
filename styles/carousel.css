@@ -171,6 +171,7 @@ form.example input[type="text"] {
   float: left;
   width: 80%;
   background: black;
+  color: #f2f2f2;
 }
 
 form.example button {

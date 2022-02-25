@@ -87,3 +87,7 @@ border: transparent;
     font-weight: 10px;
     letter-spacing: 2px;
 }
+a{
+    text-decoration: none;
+    color: black;
+}
