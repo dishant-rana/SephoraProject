@@ -1,0 +1,173 @@
+ *{
+  box-sizing:border-box;
+  margin: auto;
+  padding: auto;
+ }
+#cool {
+  display: block;
+}
+
+/* Slideshow container */
+.saleSlideshowContainer ,.saleSlideshowContainer2, .salePart {
+  max-width: 1000px;
+  position: relative; 
+   margin: auto; 
+  padding: auto;
+  line-height: 40px;
+  margin-top: 20px;
+}
+#saleHeading > img {
+  width: 100%;
+  padding: auto;
+  margin: auto;
+}
+#saleContainer {
+  margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        text-align: center;
+        width: 100%;
+        line-height: 40px;
+        grid-gap: 30px;
+        
+}
+#avatar {
+  width: 90%;
+  height: 60%;
+}
+/* #part {
+  
+  margin-bottom: 40px;
+  
+  width: 100%;
+  
+} */
+
+
+/* Hide the images by default */
+.saleMySlides , .saleMySlides2 {
+  display: none;
+}
+
+/* Next & previous buttons */
+.salePrev, .saleNext, .salePrev2, .saleNext2 {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: grey;
+  font-weight: bold;
+  font-size: 30px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.saleNext, .saleNext2 {
+  right: 0;
+  border-radius: 3px 0 0 3px ;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.salePrev:hover, .saleNext:hover, .salePrev2:hover, .saleNext2:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+
+/* The dots/bullets/indicators */
+.saleDot, .saleDot2 {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.saleActive, .saleDot:hover, .saleActive2, .saleDot2:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.saleFade, .saleFade2 {
+  -webkit-animation-name: saleFade,saleFade2;
+  -webkit-animation-duration: 1.5s;
+  animation-name: saleFade, saleFade2;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes saleFade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes saleFade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+@-webkit-keyframes saleFade2 {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes saleFade2 {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+@media all and (min-width: 481px) and (max-width: 800px) {
+  #saleContainer {
+    grid-template-columns: repeat(2, 1fr);
+    width: 85%;
+    line-height: 20px;
+    grid-gap: 20px;
+  }
+  .salePrev, .saleNext, .salePrev2, .saleNext2 {
+    font-size: 20px;
+    font-weight: lighter;
+  }
+  .saleDot, .saleDot2 {
+    cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  }
+  .saleNext, .saleNext2 {
+    right: 0;
+    border-radius: 2px 0 0 2px ;
+  }
+
+}
+
+/* small */
+@media all and (min-width: 50px) and (max-width: 480px) {
+  #saleContainer {
+    grid-template-columns: repeat(1, 1fr);
+    width: 80%;
+    line-height: 15px;
+    grid-gap: 15px;
+  }
+  .salePrev, .saleNext, .salePrev2, .saleNext2 {
+    font-size: 10px;
+    font-weight: lighter;
+  }
+  .saleDot, .saleDot2 {
+    cursor: pointer;
+  height: 8px;
+  width: 8px;
+  margin: 0 1px;
+  }
+  .saleNext, .saleNext2 {
+    right: 0;
+    border-radius: 1px 0 0 1px ;
+  }
+
+}

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cart</title>
+    <link rel="shortcut icon" href="https://static.nnnow.com/client/assets/images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/cart.css">
+    <link rel="stylesheet" href="./styles/header.css">
+        <link rel="shortcut icon" href="https://static.nnnow.com/client/assets/images/favicon.ico">
+        <script src="https://kit.fontawesome.com/5eb914bf2e.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Open+Sans:wght@300&family=Oswald:wght@300&family=Roboto&family=Roboto+Condensed:wght@300&family=Ubuntu&display=swap"
+            rel="stylesheet">
+        <script src="https://kit.fontawesome.com/5eb914bf2e.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    .imgsize{
+        width: 100px;
+        height: 150px;
+        margin: auto;
+    }
+</style>
+<header>
+    <div id="containerFoot">
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">Brands</a>
+            <a href="#">Men</a>
+            <a href="#">Women</a>
+            <a href="#">Kids</a>
+        </div>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        <img src="https://cdn02.nnnow.com/web-images/master/navtree_metaData/59b2425ae4b0d70964ee66e0/1505806763887/12NNNOWLOGODESKTOP.png"
+            alt="">
+        <div class="vl"></div>
+        <i class="fa-solid fa-location-dot"></i>
+        <span id="store">Store Locator</span>
+        <div id="discountCode">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <span class="light">
+                Get 15 % Off on a purchase of Rs 6,000 | CODE : SEP15
+            </span>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+        </div>
+        <div id="last">
+            <i class="fa-solid fa-mobile-button"></i>
+            <span class="light">Get App</span>
+            <div class="vl"></div>
+            <i class="fa-solid fa-cube"></i>
+            <span class="light">Track Order</span>
+            <div class="vl"></div>
+            <i class="fa-solid fa-trophy"></i>
+            <span class="light">Loyalty</span>
+        </div>
+
+
+
+    </div>
+    <div id="containerFoot2">
+        <div>
+            <form class="form">
+                <button type="submit"><i class="fa fa-search"></i></button>
+                <input type="text" placeholder="Search SEPHORA" name="search">
+            </form>
+        </div>
+        <div>
+            <h1>SEPHORA</h1>
+        </div>
+        <div>
+            <a href="">
+                <i class="fa-solid fa-heart"></i>
+            </a>
+            <div class="vl"></div>
+            <a href="">
+                <i class="fa-solid fa-bag-shopping"></i>
+            </a>
+            <div class="vl"></div>
+            <a id="login" href="login.html">
+                <i class="fa-solid fa-user"></i>
+                <span>Login</span>
+            </a>
+        </div>
+    </div>
+</header>
+<body class="body1">
+   
+    
+    <div class="cartBox">
+        <h1 style="font-weight:initial;margin: 1% 4%;">Shopping Cart</h1>
+        <hr>
+        <div class="product" id="medicine"></div>
+        <div class="smallDiv">
+            <div class="small1">
+                <p>Safe Buy:100% Money Back Guarantee</p>
+                <p>Live Easy:15 Days Easy Return Policy</p>
+                <p>Top Notch:Genuine Products Guarantee</p>
+            </div>
+            <div class="small2">
+                <div>
+                    <div style="margin-top: 1%;">
+
+                        <span id="add">
+                            <p style="font-size: 14px; margin-top: 2%;">Total</p>
+                        </span>
+                    </div>
+                </div>
+                <p>Delivery Charge<span style="color:#f138c9;margin-left: 2%;font-weight: bold;">Free</span></p>
+                <hr>
+
+                <div>
+                    <h2>Grand Total</h2>
+                </div>
+                <div style="font-size: 20px; font-weight: bolder;" id="add_qunt">₹</div>
+                <button type="submit" class="cont1"><a href="index.html" style="font-size: 18px;">Continue
+                        Shopping</a></button>
+                <button type="submit" class="cont2"><a href="payment.html"><span>Place Order</span></a></button>
+            </div>
+        </div>
+    </div>
+    <div class="adressdiv">
+        <div>
+            <h3>Rzb-161/2, Nihal Vihar,Delhi</h3>
+            <h3>Pincode-110041</h3>
+            <h3>9319348133</h3>
+        </div>
+        <div class="btndiv">
+        <button class="addbtn"><a href="address.html">Add Address</a></button>
+        <button class="addbtn" style="margin-left: 10px;">Change Address</button>
+    </div>
+    </div>
+
+
+</body>
+
+</html>
+<script>
+    var parent = document.getElementById('medicine');
+
+    var cart = JSON.parse(localStorage.getItem("cartData"))
+
+    
+
+    function showProducts() {
+
+        cart.map(function (product) {
+
+            var div = document.createElement("div");
+
+            var img = document.createElement("img");
+
+
+
+            img.src = product.prod_img;
+            img.setAttribute("class","imgsize");
+
+
+            var product_prize = document.createElement("p");
+
+            product_prize.textContent = product.price;
+            product_prize.style.fontSize = "20px"
+            // product_prize.style.textAlign = "center"
+
+
+            var product_name = document.createElement("p")
+
+            product_name.textContent = product.name;
+            product_name.style.fontSize = "15px"
+            // product_name.style.textAlign = "center"
+
+            var addtocart_btn = document.createElement("button");
+
+            addtocart_btn.innerText = "Add to cart";
+
+            addtocart_btn.onclick = function () {
+                addtoCart(product);
+            };
+
+            div.append(img, product_name, product_prize)
+
+            parent.append(div);
+
+        });
+
+        var num = document.createElement("h1");
+        num.textContent = cart.length;
+
+        var added = document.getElementById("add");
+        added.append(num);
+
+        var pr = document.getElementById("add_qunt");
+
+        var total = 0;
+        var total_pr = JSON.parse(localStorage.getItem("cartData"));
+
+        total_pr.map(function (total_pr) {
+            var curn="";
+            for(var i=4;i<total_pr.price.length;i++){
+                curn=curn+total_pr.price[i];
+            }
+            curn=+curn;
+            total+=curn;
+        });
+        pr.append(total);
+    }
+
+
+    showProducts();
+</script>
+<script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+</script>

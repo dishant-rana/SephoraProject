@@ -1,0 +1,56 @@
+#signupcontainer{
+    width: 30%;
+    height: 720px;
+    margin: auto;
+    margin-top: 12px;
+    border-radius: 0.5rem;
+    box-shadow: 4px 4px 20px 5px rgba(0, 0, 0, 0.25);
+    box-sizing: border-box;
+}
+#signhead{
+    width: 50%;
+    height: 100px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#signhead h1{
+    padding-top: 20px;
+}
+#signdetails{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5,auto);
+    gap: 20px;
+}
+#signdetails>div{
+    padding-bottom: 10px;
+
+}
+#signdetails input{
+    width: 80%;
+    height: 40px;
+    margin-left: 30px;
+    margin-top: -3px;
+    border: 2px solid black;
+}
+#signupbtn{
+    width: 82%;
+    height: 40px;
+    padding-left: 20px;
+    margin-left: 30px;
+    background-color: #ff3399;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-family: sans-serif;
+    border: 1px solid #ff3399;
+    margin-top: 20px;
+    cursor: pointer;
+}
+#signp{
+    font-size: 14px;
+    color: #999999;
+    margin-left: 30px;
+}

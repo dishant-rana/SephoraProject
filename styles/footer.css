@@ -1,0 +1,93 @@
+#subscribe h2 {
+  text-align: center;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+#subscribe {
+  background-color: whitesmoke;
+  margin-top: 50px;
+}
+#subscribe > div:last-child {
+  display: flex;
+  justify-content: center;
+}
+#subscribe input {
+  width: 300px;
+  height: 50px;
+  font-size: 20px;
+  border: 0;
+  margin-bottom: 5px;
+}
+#subscribe input:focus {
+  outline: 0;
+}
+#subscribe button {
+  width: 200px;
+  margin-bottom: 5px;
+  border: 0;
+  text-align: center;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#subscribe button:hover {
+  cursor: pointer;
+}
+#contentFoot {
+  width: 90%;
+  margin: auto;
+  margin-top: 30px;
+  color: #656565;
+}
+#contentFoot h3 {
+  letter-spacing: 2px;
+  text-align: center;
+  margin-bottom: -10px;
+}
+#contentFoot > h3{
+  margin-bottom: 10px;
+}
+#contentFoot p {
+  text-align: center;
+  line-height: 25px;
+  margin-bottom: 30px;
+}
+#contentFoot > h3:first-child {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+#links {
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+}
+#links a {
+  text-decoration: none;
+  color: black;
+  letter-spacing: 2px;
+}
+#links a:hover {
+  color: #ec008c;
+}
+#social {
+  margin: auto;
+  width: 20%;
+  display: flex;
+  justify-content: space-around;
+}
+#social i {
+  font-size: 20px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+#social i:hover {
+  font-size: 25px;
+  color: #ec008c;
+  cursor: pointer;
+}
+

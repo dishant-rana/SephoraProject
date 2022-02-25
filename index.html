@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./styles/carousel.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="shortcut icon" href="https://static.nnnow.com/client/assets/images/favicon.ico">
+    <script src="https://kit.fontawesome.com/5eb914bf2e.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Open+Sans:wght@300&family=Oswald:wght@300&family=Roboto&family=Roboto+Condensed:wght@300&family=Ubuntu&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5eb914bf2e.js" crossorigin="anonymous"></script>
+    <title>Sephora</title>
+    <style>
+        #subscribe h2 {
+  text-align: center;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+#subscribe {
+  background-color: whitesmoke;
+  margin-top: 50px;
+}
+#subscribe > div:last-child {
+  display: flex;
+  justify-content: center;
+}
+#subscribe input {
+  width: 300px;
+  height: 50px;
+  font-size: 20px;
+  border: 0;
+  margin-bottom: 10px;
+}
+#subscribe input:focus {
+  outline: 0;
+}
+#subscribe button {
+  width: 200px;
+  margin-bottom: 10px;
+  border: 0;
+  text-align: center;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#subscribe button:hover {
+  cursor: pointer;
+}
+#contentFoot {
+  width: 90%;
+  margin: auto;
+  margin-top: 30px;
+  color: #656565;
+}
+#contentFoot h3 {
+  letter-spacing: 2px;
+  text-align: center;
+  margin-bottom: -10px;
+}
+#contentFoot p {
+  text-align: center;
+  line-height: 25px;
+  margin-bottom: 30px;
+}
+#contentFoot > h3:first-child {
+  margin-bottom: 20px;
+}
+#links {
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+}
+#links a {
+  text-decoration: none;
+  color: black;
+  letter-spacing: 2px;
+}
+#links a:hover {
+  color: #ec008c;
+}
+#social {
+  margin: auto;
+  width: 20%;
+  display: flex;
+  justify-content: space-around;
+}
+#social i {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+#social i:hover {
+  font-size: 25px;
+  color: #ec008c;
+  cursor: pointer;
+}
+
+    </style>
+
+
+</head>
+
+<body>
+
+
+
+    <header>
+        <div id="containerFoot">
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="#">Home</a>
+                <a href="#">Men</a>
+                <a href="#">Women</a>
+                <a href="#">Kids</a>
+            </div>
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+            <img src="https://cdn02.nnnow.com/web-images/master/navtree_metaData/59b2425ae4b0d70964ee66e0/1505806763887/12NNNOWLOGODESKTOP.png"
+                alt="">
+            <div class="vl"></div>
+            <i class="fa-solid fa-location-dot"></i>
+            <span id="store">Store Locator</span>
+            <div id="discountCode">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span class="light">
+                    Get 15 % Off on a purchase of Rs 6,000 | CODE : SEP15
+                </span>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <div id="last">
+                <i class="fa-solid fa-mobile-button"></i>
+                <span class="light">Get App</span>
+                <div class="vl"></div>
+                <i class="fa-solid fa-cube"></i>
+                <span class="light">Track Order</span>
+                <div class="vl"></div>
+                <i class="fa-solid fa-trophy"></i>
+                <span class="light">Loyalty</span>
+            </div>
+
+
+
+        </div>
+        <div id="containerFoot2">
+            <div>
+                <form class="form">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                    <input type="text" placeholder="Search SEPHORA" name="search">
+                </form>
+            </div>
+            <div>
+                <h1>SEPHORA</h1>
+            </div>
+            <div>
+                <a href="">
+                    <i class="fa-solid fa-heart"></i>
+                </a>
+                <div class="vl"></div>
+                <a href="cart.html">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                </a>
+                <div class="vl"></div>
+                <a id="login" href="login.html">
+                    <i class="fa-solid fa-user"></i>
+                    <span>Login</span>
+                </a>
+            </div>
+        </div>
+        <div id="containerFoot3">
+            <div><a href="sale.html">SALE</a></div>
+            <div><a href="makeup.html">MAKEUP</a></div>
+            <div><a href="skincare.html">SKINCARE</a></div>
+            <div><a href="fragrance.html">FRANGRANCE</a></div>
+            <div><a href="haircare.html">HAIRCARE</a></div>
+            <div><a href="tools&brushes.html">TOOLS & BRUSHES</a></div>
+            <div><a href="brand.html">BRANDS</a></div>
+        </div>
+        <div id="lastbar"></div>
+    </header>
+
+
+
+
+
+
+
+
+
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <img src="https://logan.nnnow.com/content/dam/nnnow-project/o1-feb-2022/SEPHORA(Minimum10)TopbannerDesktop(1).jpg"
+                style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="https://logan.nnnow.com/content/dam/nnnow-project/18-feb-2022/ABH_TopbannerDesktop_gif.gif"
+                style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="https://logan.nnnow.com/content/dam/nnnow-project/10-feb-2022/SmashboxTopbanner-DesktopGIF.gif"
+                style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="https://logan.nnnow.com/content/dam/nnnow-project/18-feb-2022/BenefitPlaytintTopBanner-Desktop.jpg"
+                style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="https://logan.nnnow.com/content/dam/nnnow-project/14-feb-2022/Lanc%C3%B2meGenifique_TopbannerDesktop.jpg"
+                style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="https://logan.nnnow.com/content/dam/nnnow-project/21-feb-2022/se/ContentTopBanner_SkintellectualDesktop.jpg"
+                style="width:100%">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <div id="second-div">
+        <div>Steals and Deals</div>
+        <div>Beauty Minis<br> Under $999</div>
+        <div>Everyday<br>Essentials</div>
+        <div>Trending Now</div>
+        <div>Editor's Pick</div>
+        <div>Top Fragrances</div>
+    </div>
+
+
+    <div id="third-div">
+        <div>
+            <img src="https://logan.nnnow.com/content/dam/nnnow-project/10-feb-2022/SephoraBrandoftheweektext3310x240.jpg"
+                alt="">
+        </div>
+        <div>
+            <img src="https://logan.nnnow.com/content/dam/nnnow-project/16-feb-2022/ABH_BrandoftheweekDesktop.jpg"
+                alt="">
+        </div>
+    </div>
+
+
+    <div id="fourth-div">
+
+
+    </div>
+    <h1 style="margin-left: 300px;font-style: italic;font-weight:lighter;font-size: 40px;">Just Landed</h1>
+    <div class="scrollmenu">
+        <div id="fourth-div">
+            <div>
+                <div>
+                    <img id="product"
+                        src="https://cdn17.nnnow.com/web-images/medium/styles/HP56XJMI1GI/1641795259174/1.jpg" alt="">
+                </div>
+                <div id="content">
+                    <img src="https://cdn02.nnnow.com/web-images/master/product_tags/cb6e9f96-922e-42cb-84ae-9337178f87fa/1554297283453/Sale.png"
+                        alt="">
+                    <span>Offer</span>
+                    <h5>Benefit Cosmetics</h5>
+                    <p>Playtint Cheek & Lip Stain - Pink - lemonade</p>
+                    <p id="price">Rs. 1,1720</p>
+                    <p>3 more offers</p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <img id="product"
+                        src="https://cdn09.nnnow.com/web-images/medium/styles/USOWTG677JQ/1644914354466/1.jpg" alt="">
+                </div>
+                <div id="content">
+                    <img src="https://cdn02.nnnow.com/web-images/master/product_tags/cb6e9f96-922e-42cb-84ae-9337178f87fa/1554297283453/Sale.png"
+                        alt="">
+                    <span>Offer</span>
+                    <h5>Sephora Collections</h5>
+                    <p>Firming Eye Cream</p>
+                    <p id="price">Rs.1,400</p>
+                    <p>2 more offers</p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <img id="product"
+                        src="https://cdn19.nnnow.com/web-images/medium/styles/HNTNV1053NR/1644474571357/1.jpg" alt="">
+                </div>
+                <div id="content">
+                    <img src="https://cdn02.nnnow.com/web-images/master/product_tags/cb6e9f96-922e-42cb-84ae-9337178f87fa/1554297283453/Sale.png"
+                        alt="">
+                    <span>Offer</span>
+                    <h5>Anastasia Beverly Hills</h5>
+                    <p>Norvina Pro Pigment Palette Vol.5 - Lilac</p>
+                    <p id="price">Rs. 7,600</p>
+                    <p>2 more offers</p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <img id="product"
+                        src="https://cdn01.nnnow.com/web-images/medium/styles/W6MKO3ONP9F/1640342255710/1.jpg" alt="">
+                </div>
+                <div id="content">
+                    <img src="https://cdn02.nnnow.com/web-images/master/product_tags/cb6e9f96-922e-42cb-84ae-9337178f87fa/1554297283453/Sale.png"
+                        alt="">
+                    <span>Offer</span>
+                    <h5>Anastasia Beverly Hills</h5>
+                    <p>Stick Blush - Soft Rose</p>
+                    <p id="price">Rs. 3,200</p>
+                    <p>2 more offers</p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <img id="product"
+                        src="https://cdn13.nnnow.com/web-images/medium/styles/DQQA274P9LA/1641795451723/1.jpg" alt="">
+                </div>
+                <div id="content">
+                    <img src="https://cdn02.nnnow.com/web-images/master/product_tags/cb6e9f96-922e-42cb-84ae-9337178f87fa/1554297283453/Sale.png"
+                        alt="">
+                    <span>Offer</span>
+                    <h5>Benefit Cosmetics</h5>
+                    <p>The Professional Litw Primer</p>
+                    <p id="price">Rs. 3,300</p>
+                    <p>3 more offers</p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <img id="product"
+                        src="https://cdn19.nnnow.com/web-images/medium/styles/F39SPVCHLBL/1641795259026/1.jpg" alt="">
+                </div>
+                <div id="content">
+                    <img src="https://cdn02.nnnow.com/web-images/master/product_tags/cb6e9f96-922e-42cb-84ae-9337178f87fa/1554297283453/Sale.png"
+                        alt="">
+                    <span>Offer</span>
+                    <h5>Benefit Cosmetics</h5>
+                    <p>That Gal Colour Correcting Primer - Sliky Lavender</p>
+                    <p id="price">Rs. 3,000</p>
+                    <p>3 more offers</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+
+
+    <h2 style="text-align: center;font-weight: lighter;font-size: 30px;">Spring It On</h2>
+
+    <div id="sixth-div">
+
+        <div>
+            <img id="sixth"
+                src="https://logan.nnnow.com/content/dam/nnnow-project/21-feb-2022/se/ContentP-Story_SkinDrinks.jpg"
+                alt="">
+        </div>
+        <div>
+            <img id="sixth"
+                src="https://logan.nnnow.com/content/dam/nnnow-project/21-feb-2022/se/ContentP-Story_FlowerPower.jpg"
+                alt="">
+        </div>
+        <div>
+            <img id="sixth"
+                src="https://logan.nnnow.com/content/dam/nnnow-project/21-feb-2022/se/ContentP-Story_TickledPink.jpg"
+                alt="">
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <h1 style="text-align: center;font-weight: lighter;">Everything On Sale</h1>
+
+
+
+    <div id="fourth-div">
+        <div>
+            <div>
+                <img id="product" src="https://cdn18.nnnow.com/web-images/medium/styles/LF9B8BFLIIQ/1519382076017/1.jpg"
+                    alt="">
+            </div>
+            <div id="content">
+                <img src="https://cdn02.nnnow.com/web-images/master/product_tags/cb6e9f96-922e-42cb-84ae-9337178f87fa/1554297283453/Sale.png"
+                    alt="">
+                <span>Offer</span>
+                <h5>Sephora Collection</h5>
+                <p>Cream Lip Stain - 41 Vintage Rosewood</p>
+                <p id="price">Rs. 1,220</p>
+                <p>4 more offers</p>
+            </div>
+        </div>
+
+
+        <div>
+            <div>
+                <img id="product" src="https://cdn00.nnnow.com/web-images/medium/styles/ZESFQB5VJ3A/1563446923625/1.jpg"
+                    alt="">
+            </div>
+            <div id="content">
+                <img src="https://cdn02.nnnow.com/web-images/master/product_tags/cb6e9f96-922e-42cb-84ae-9337178f87fa/1554297283453/Sale.png"
+                    alt="">
+                <span>Offer</span>
+                <h5>Sephora Collection</h5>
+                <p>Cream Lip Stain - 01 Always Red</p>
+                <p id="price">Rs. 1,220</p>
+                <p>4 more offers</p>
+            </div>
+        </div>
+
+
+
+        <div>
+            <div>
+                <img id="product" src="https://cdn06.nnnow.com/web-images/medium/styles/F4UKRJJ6IOV/1495515337362/1.jpg"
+                    alt="">
+            </div>
+            <div id="content">
+                <img src="https://cdn02.nnnow.com/web-images/master/product_tags/cb6e9f96-922e-42cb-84ae-9337178f87fa/1554297283453/Sale.png"
+                    alt="">
+                <span>Offer</span>
+                <h5>Sephora Collection</h5>
+                <p>Lip Liner To Go - 16 Nude Beige</p>
+                <p id="price">Rs. 560</p>
+                <p>5 more offers</p>
+            </div>
+        </div>
+
+
+
+        <div>
+            <div>
+                <img id="product" src="https://cdn13.nnnow.com/web-images/medium/styles/6J372PA7IJG/1495433798675/1.jpg"
+                    alt="">
+            </div>
+            <div id="content">
+                <img src="https://cdn02.nnnow.com/web-images/master/product_tags/cb6e9f96-922e-42cb-84ae-9337178f87fa/1554297283453/Sale.png"
+                    alt="">
+                <span>Offer</span>
+                <h5>Sephora Collection</h5>
+                <p>Cream Lip Stain - 13 Marevlous Mauve</p>
+                <p id="price">Rs. 1,220</p>
+                <p>4 more offers</p>
+            </div>
+        </div>
+
+
+
+
+        <div>
+            <div>
+                <img id="product" src="https://cdn17.nnnow.com/web-images/medium/styles/T6GHRPSQQJ9/1518007568863/1.jpg"
+                    alt="">
+            </div>
+            <div id="content">
+                <img src="https://cdn02.nnnow.com/web-images/master/product_tags/cb6e9f96-922e-42cb-84ae-9337178f87fa/1554297283453/Sale.png"
+                    alt="">
+                <span>Offer</span>
+                <h5>Sephora Collection</h5>
+                <p>Cream Lip Stain - 16 Cherry Nectar</p>
+                <p id="price">Rs. 4,350</p>
+                <p>4 more offers</p>
+            </div>
+        </div>
+
+
+
+
+        <div>
+            <div>
+                <img id="product" src="https://cdn01.nnnow.com/web-images/medium/styles/WO3Z8TG9O69/1518073456583/1.jpg"
+                    alt="">
+            </div>
+            <div id="content">
+                <img src="https://cdn02.nnnow.com/web-images/master/product_tags/cb6e9f96-922e-42cb-84ae-9337178f87fa/1554297283453/Sale.png"
+                    alt="">
+                <span>Offer</span>
+                <h5>Sephora Collection</h5>
+                <p>Cream Lip Stain - 38 Sweet Raspberry</p>
+                <p id="price">Rs. 1,220</p>
+                <p>4 more offers</p>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <h1 style="text-align: center;font-weight: lighter;font-size: 40px;">Your Favourite Brands</h1>
+
+    <div id="fourth-div">
+        <div>
+            <img id="seventh" src="https://logan.nnnow.com/content/dam/nnnow-project/17-jan-2020/logo-dsk/scdsk.jpeg"
+                alt="">
+        </div>
+        <div>
+            <img id="seventh"
+                src="https://logan.nnnow.com/content/dam/nnnow-project/11-oct-2021-/12OCT21-TILE-MUFE(1).jpg" alt="">
+        </div>
+        <div>
+            <img id="seventh" src="https://logan.nnnow.com/content/dam/nnnow-project/17-jan-2020/logo-dsk/bendsk.jpg"
+                alt="">
+        </div>
+        <div>
+            <img id="seventh" src="https://logan.nnnow.com/content/dam/nnnow-project/05-jan-2022/TF_Logo(1).jpg" alt="">
+        </div>
+        <div>
+            <img id="seventh"
+                src="https://logan.nnnow.com/content/dam/nnnow-project/03-jan-2022/se/Lancome_Logo(1).jpeg" alt="">
+        </div>
+        <div>
+            <img id="seventh" src="https://logan.nnnow.com/content/dam/nnnow-project/17-jan-2020/logo-dsk/HDdesk.jpg"
+                alt="">
+        </div>
+    </div>
+
+
+    <h1 style="text-align: center;font-weight: lighter;font-size: 40px;">New on the Block</h1>
+
+    <div id="seventh-div">
+
+    </div>
+
+    <br>
+    <br>
+
+
+    <h1 style="text-align: center;font-weight: lighter;font-size: 40px;">#SephoraDiaries</h1>
+
+    <div id="sixth-div">
+
+        <div>
+            <img id="sixth"
+                src="https://logan.nnnow.com/content/dam/nnnow-project/07-june-2021/SEPHORA_BP_SEPH-DIARIES_COVER.jpg"
+                alt="">
+            <h2 id="last">TOP 5 MAC FAVOURITES</h2>
+            <p id="lastp">With some hacks you'll love</p>
+        </div>
+        <div>
+            <img id="sixth" src="https://logan.nnnow.com/content/dam/nnnow-project/24dec19/23DEC19_BLOG3.jpg" alt="">
+            <h2 id="last">7 MASKS</h2>
+            <p id="lastp">that'll save your skin</p>
+        </div>
+        <div>
+            <img id="sixth" src="https://logan.nnnow.com/content/dam/nnnow-project/24dec19/23DEC19_BLOG4.jpg" alt="">
+            <h2 id="last">LONG LASTING MAKEUP?</h2>
+            <p id="lastp">Here's how!</p>
+        </div>
+    </div>
+
+
+
+    <footer>
+        <div id="subscribe">
+            <div>
+                <h2>
+                    GET THE LASTEST NEWS & OFFERS IN BEAUTY & FASHION
+                </h2>
+            </div>
+
+            <div>
+                <input type="text" placeholder="Enter your Email Address" />
+                <button>SUBSCRIBE</button>
+            </div>
+        </div>
+        <div id="contentFoot">
+            <h3>Sephora online India is a trailblazer in the Indian beauty scene</h3>
+            <p>A leader in luxury beauty and skincare, our purpose at Sephora online India is to create an inviting
+                online beauty shopping experience and inspire fearlessness in our community. Since the Sephora India
+                launch in 2013, we have been an industry-leading champion of diversity, and empowerment, guided by our
+                longstanding company values.
+            </p>
+            <h3>Discover who we are and what we entail only on NNNOW.com</h3>
+            <p>Owned by LVMH Moet Hennessy Louis Vuitton, the world's leading luxury goods group, Sephora was founded in
+                France by Dominique Mandonnaud in 1970 and is defined by its unique, open-sell environment with an
+                ever-increasing assortment of best-selling lipsticks, eyeliners, foundations, eye palettes and more from
+                carefully curated brands such as Make Up For Ever, Estee Lauder, Benefit Cosmetics, Huda Beauty and many
+                more.
+            </p>
+            <h3>Shop Our unrivalled range of Sephora products for a more beautiful you</h3>
+            <p>Our array on Sephora NNNOW features trusted classics from Pixi, Elizabeth Arden, Anastasia Beverly Hills,
+                Clinique, Tom Ford, and Sephora’s own, SEPHORA COLLECTION. Today, Sephora India online is a powerful
+                beauty presence in the digital space, thanks to its unparalleled assortment of prestige products in
+                every category, unbiased service from beauty experts, interactive shopping environment, and innovation.
+            </p>
+            <p>Through some of our bestsellers such as Sephora lipsticks, Sephora foundations, and other Sephora
+                products, we explore the universe of beauty and wellness with an unbiased approach to experiential
+                retail. We also host expert tutorial videos from our top brands to help you nail the perfect smokey eye
+                or winged eyeliner. Our team of experts in-store also works hard to assure you have a seamless shopping
+                experience with us and helps you define your skin undertones while purchasing the right sephora
+                foundation for you. Sephora continues to give back to communities and advance inclusion in the beauty
+                industry by providing an unrivaled range of shades for Sephora foundations at unbeatable prices.</p>
+            <p>Sephora in India also encompasses a formidable range of skincare, bath and body products, haircare,
+                fragrances and perfumes from international brands. Many of our brands such as Botanist and Forest
+                Essentials boast of incorporating only natural ingredients in their products, whereas award-winning such
+                as Natasha Denona, Nudestix, Kora Organics, Aveda, Olaplex, and more promise only SLS/Paraben-free
+                formulas in their range of products. Be sure to also check out our range of cruelty-free brands that
+                include best-selling brands such as Caudalie, Smashbox, Dear Dahlia, Juice Beauty and much more. Sephora
+                online hosts the entire range of makeup and skin products available in Sephora stores in India. Buy
+                Sephora online on NNNOW and be the first to be alerted when we have a major Sephora India sale event
+                coming up!</p>
+            <p>Start your Sephora India online shopping on NNNOW.com
+            </p>
+            <p>Women can now shop their favorite luxury beauty brands on the Sephora site or via the NNNOW mobile app.
+                Be spoilt for choice with a wide variety of makeup, skincare, haircare, bath and body and fragrances
+                that you can shop from the comfort of your home. Discover online shopping that offers advantages such as
+                Gift With Purchase, freebie sachets, and discount offers on beauty! Buy Sephora online at amazing deals
+                and prices at the click of a button.
+            </p>
+        </div>
+        <div id="links">
+            <h4><a href="">WHO WE ARE</a></h4>
+            <h4><a href="">FREQUENTLY ASKED QUESTIONS</a></h4>
+            <h4><a href="">CONTACT US</a></h4>
+        </div>
+        <div id="social">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-youtube"></i>
+        </div>
+    </footer>
+
+
+
+
+</body>
+
+</html>
+<script src="./scripts/index.js"></script>
+<script src="./scripts/productData.js"></script>
+<script src="./scripts/newProduct.js"></script>
+<script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+</script>
