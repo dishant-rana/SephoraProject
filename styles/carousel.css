@@ -276,6 +276,7 @@ form.example::after {
 .active,
 .dot:hover {
   background-color: #717171;
+  cursor:pointer;
 }
 
 /* Fading animation */
