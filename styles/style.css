@@ -54,6 +54,7 @@
 }
 .mbutton:hover{
   background-color: rgb(255, 102, 0);
+  cursor: pointer;
 }
 
 @media only screen and (min-width: 421px) and (max-width: 720px) {
