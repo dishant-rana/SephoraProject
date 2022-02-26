@@ -1,6 +1,5 @@
 # SephoraProject
-*About the Project : Sephora is a French multinational retailer of personal care and beauty products. Featuring nearly 3,000 brands, along with its own private label,
-Sephora Collection, Sephora offers beauty products including cosmetics, skincare, body, fragrance, nail color, beauty tools, body lotions and haircare.
+*About the Project : Being in Masai at the end of the unit we were assigned with the task of cloning the Sephora website. Our t whole team worked hard and passionately to work get it done. During the construct week the work was divided between and the team members and each team memeber contributed to the project and helped to get it done within the given time period.
 
 *Tech Stack Used: JavaScript HTML CSS
 
