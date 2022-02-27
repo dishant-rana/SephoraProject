@@ -20,7 +20,7 @@
         <div id="containerFoot">
             <div id="mySidenav" class="sidenav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <a href="brand.html">Brands</a>
+                <a href="index.html">Home</a>
                 <a href="#">Men</a>
                 <a href="#">Women</a>
                 <a href="#">Kids</a>
@@ -122,13 +122,26 @@
 </body>
 </html>
 <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+</script>
+<script>
     var regdUsers=JSON.parse(localStorage.getItem("loginDetails")) || [];
     function createUser(){
         var obj={};
         var name=document.querySelector("#name").value;
         var email=document.querySelector("#email").value;
         var pass=document.querySelector("#pass").value;
-        obj={
+        if(name=="" || email=="" || pass==""){
+            alert("Please fill the Required fields")
+        }
+        else{
+            obj={
             name:name,
             pass:pass,
             email:email
@@ -137,5 +150,7 @@
         localStorage.setItem("loginDetails",JSON.stringify(regdUsers));
         window.location.href="login.html";
         alert("Account Created SuccessFully!")
+        }
+        
     }
 </script>
